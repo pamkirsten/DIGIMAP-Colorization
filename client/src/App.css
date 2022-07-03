@@ -1,3 +1,9 @@
+
+@font-face {
+  font-family: 'Inter';
+}
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +41,173 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.mainWrapper {
+  width: 100%;
+  height:300px;
+  font-family: 'Inter';
+font-style: normal;
+  
+
+}
+
+.contentWrapper {
+  width: 100%;
+  height:800px;
+  font-family: 'Inter';
+font-style: normal;
+ 
+}
+
+.heading  {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+
+position: absolute;
+width: 449px;
+height: fit-content;
+left: 118px;
+top: 250px;
+
+}
+
+.headingTitle{
+width: 450px;
+height: 154px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 77px;
+margin: 0px;
+color: #FFFFFF;
+}
+
+.headingSub{
+width: 450px;
+height: 58px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 29px;
+margin: 0px;
+
+color: #FFFFFF;
+
+
+}
+
+.headingButton{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px 84px;
+gap: 10px;
+width: 400px;
+height: 45px;
+background: #31A05F;
+border-radius: 42px;
+border: none;
+}
+
+.butTitle{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 29px;
+/* identical to box height */
+
+text-align: right;
+
+color: #FFFFFF;
+margin: 0px;
+}
+
+.Results{ 
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 54px 280px;
+gap: 21px;
+
+position: relative;
+width: 1439px;
+height: 100vh;
+
+background: #FFFFFF;
+}
+
+.resContainer{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 94px;
+
+width: 879px;
+height: fit-content;
+
+}
+
+.origContainer{
+  display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 392px;
+height: fit-content;
+
+}
+
+.colorContainer{
+  display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 393px;
+height: fit-content;
+
+}
+
+.bDownload{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px 84px;
+
+
+width: 879px;
+height: 55px;
+
+background: #31A05F;
+border-radius: 16px;
+border: none;
+}
+.dText{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+/* identical to box height */
+
+text-align: right;
+
+color: #FFFFFF;
+margin: 0px;
 }
