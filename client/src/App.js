@@ -63,14 +63,14 @@ function App() {
         <div className='resContainer'>
           <div className='origContainer'>
             <h4> Original</h4>
-            <img style={{objectFit:"cover" , borderRadius:"16px"}} src={"/before.png"} width="390" height="500" />
+            <img style={{objectFit:"cover" , borderRadius:"16px"}} src={"/before.png"} width="390" height="450" />
 
 
           </div>
           <div className='colorContainer'>
           <h4> Colorized</h4>
 
-          <img style={{objectFit:"cover", borderRadius:"16px"}} src={"/after.png"} width="390" height="500" />
+          <img style={{objectFit:"cover", borderRadius:"16px"}} src={"/after.png"} width="390" height="450" />
 
 
 
@@ -87,11 +87,6 @@ function App() {
 
 
 
-    <div>
-      <h1>Colorization</h1>
-      <input type="file" id="image_input" accept="image/png, image/jpg" onChange={handleChange}></input>
-      <img src={file}/>
-    </div>
 
 </div>
   );
