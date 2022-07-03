@@ -19,6 +19,13 @@ const after =
 
 
 function App() {
+
+  const [file, setFile] = useState();
+  function handleChange(e) {
+    console.log(e.target.files)
+    setFile(URL.createObjectURL(e.target.files[0]))
+  }
+
   return (
 
     <div className="contentWrapper">
@@ -44,8 +51,10 @@ function App() {
           <h1 className='headingTitle'> Image Colorization</h1>
           <p className='headingSub'> Bring color to your black and
             white photographs.</p>
-          <button className='headingButton'> <p className="butTitle">Upload Photo  </p>  </button>
-
+          
+            <input type="file" id="image_input" accept="image/png, image/jpg" onChange={handleChange} className="custom-file-input"/>
+            <img src={file}/>
+          
         </div>
       </section>
 
@@ -78,10 +87,15 @@ function App() {
 
 
 
+    <div>
+      <h1>Colorization</h1>
+      <input type="file" id="image_input" accept="image/png, image/jpg" onChange={handleChange}></input>
+      <img src={file}/>
     </div>
 
-
+</div>
   );
+
 }
 
 export default App;

@@ -211,3 +211,32 @@ text-align: right;
 color: #FFFFFF;
 margin: 0px;
 }
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.custom-file-input::before {
+  content: 'Upload a photo';
+  display: inline-block;
+  background: #31A05F;
+  border: none;
+  border-radius: 32px;
+  padding: 12px 98px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+.custom-file-input:hover::before {
+  border-color: none;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+.custom-file-input{
+  width:450px;
+}
