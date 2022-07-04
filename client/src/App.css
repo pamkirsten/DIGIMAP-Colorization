@@ -90,8 +90,9 @@ color: #FFFFFF;
 }
 
 .headingSub{
-width: 450px;
-height: 58px;
+width: 480px;
+text-shadow: #3c3c3e28;
+height: fit-content;
 
 font-family: 'Inter';
 font-style: normal;
@@ -148,14 +149,15 @@ background: #FFFFFF;
 }
 
 .resContainer{
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 94px;
-
-width: 879px;
-height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 18px;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: center;
 
 }
 
@@ -166,7 +168,7 @@ align-items: center;
 padding: 0px;
 gap: 16px;
 
-width: 392px;
+width: fit-content;
 height: fit-content;
 
 }
@@ -178,7 +180,8 @@ align-items: center;
 padding: 0px;
 gap: 16px;
 
-width: 393px;
+
+width: fit-content;
 height: fit-content;
 
 }
@@ -198,6 +201,23 @@ background: #31A05F;
 border-radius: 16px;
 border: none;
 }
+
+.bUpload{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px 84px;
+
+
+width: 879px;
+height: 55px;
+
+background: white;
+border-radius: 16px;
+border-color: #31A05F;
+}
+
 .dText{
   font-family: 'Inter';
 font-style: normal;
@@ -209,6 +229,19 @@ line-height: 29px;
 text-align: right;
 
 color: #FFFFFF;
+margin: 0px;
+}
+.uText{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+/* identical to box height */
+
+text-align: right;
+
+color: #31A05F;
 margin: 0px;
 }
 
