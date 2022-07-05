@@ -30,9 +30,9 @@ function App() {
 
     <div className="contentWrapper">
 
-      <Navbar bg="dark">
-        <Container >
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+      <Navbar  bg="dark">
+        <Container  style={{padding:"0px 40px"}}>
+          <Navbar.Brand href="#home"><img src='/icon.png'></img></Navbar.Brand>
          
         </Container>
       </Navbar>
@@ -53,8 +53,10 @@ function App() {
       </section>
 
       <section className='Results'>
+      <h1 style={{fontWeight:"600"}}>Results</h1>
 
         <div className='resContainer'>
+          
           <div className='origContainer'>
             <h4> Original</h4>
             <img style={{objectFit:"contain" , borderRadius:"16px", maxWidth:"600px"}} src={"/before.png"} />
